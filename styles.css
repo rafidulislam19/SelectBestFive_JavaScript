@@ -6,3 +6,11 @@ header {
     align-items: center; */
     color: #FF5E19;
 }
+main {
+    background-color: #151515;
+    height: 2000px;
+}
+#p {
+    height: 305px;
+
+}
