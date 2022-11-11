@@ -4,8 +4,6 @@ function playerList(playerId) {
     const list= document.getElementById('1');
     list.innerText = playerName;
     
-    
-  
 }
 
 
