@@ -133,35 +133,35 @@
                     <h4 class="card-title text-white d-flex justify-content-center py-3 ">Budget</h4>
                     <div class="d-flex justify-content-center">
                       <h6 class="text-white me-2">Per Player</h6>
-                      <input style="background: transparent; border: solid whitesmoke 2px; color: whitesmoke;"  type="text">
+                      <input id="playerMoney" style="background: transparent; border: solid whitesmoke 2px; color: whitesmoke;"  type="text">
                     </div>
                     <div class="d-flex justify-content-center my-3">
-                      <button class="btn btn-primary px-5 fw-bold">Calculate</button>
+                      <button id="calculate" class="btn btn-primary px-5 fw-bold">Calculate</button>
                       
                     </div>
                     <div class="d-flex justify-content-center my-3">
                       <h6 class="text-white me-2 pe-5">Player Expenses</h6>
                       <ul>
-                        <li class="text-white me-3" style="list-style-type: none;">$5000</li>
+                        <h6 class="text-white me-3">$<span id="playerExpenses">00</span></h6>
                       </ul>
                   </div>
 
                     <div class="d-flex justify-content-center">
                       <h6 class="text-white me-2">Manager</h6>
-                      <input style="background: transparent; border: solid whitesmoke 2px;color: whitesmoke;"  type="text">
+                      <input id="managerMoney" style="background: transparent; border: solid whitesmoke 2px;color: whitesmoke;"  type="text">
                     </div>
                     <div class="d-flex justify-content-center my-3">
                       <h6 class="text-white me-2">Coach</h6>
-                      <input style="background: transparent; border: solid whitesmoke 2px; color: whitesmoke;" class="ms-4" type="text">
+                      <input id="coachMoney" style="background: transparent; border: solid whitesmoke 2px; color: whitesmoke;" class="ms-4" type="text">
                     </div>
                     <div class="d-flex justify-content-center my-3">
-                      <button class="btn btn-primary px-5 fw-bold">Calculate Total</button>
+                      <button id="calculateTotal" class="btn btn-primary px-5 fw-bold">Calculate Total</button>
                       
                     </div>
                     <div class="d-flex justify-content-center my-3">
                       <h6 class="text-white me-5 pe-5">Total</h6>
                       <ul>
-                        <li class="text-white me-3 ms-3" style="list-style-type: none;">$5000</li>
+                        <h6  class="text-white me-3 ms-3">$<span id="total">00</span></h6>
                       </ul>
                   </div>
                 </div>
@@ -224,6 +224,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
    <script src="js/player.js"></script>
+   <script src="js/calculation.js"></script>
 </body>
 
 </html>
