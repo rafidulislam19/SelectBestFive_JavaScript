@@ -1,13 +1,15 @@
-for (let i = 1; i <= 5; i++) {
-        function playerList(playerId) {
+function playerList(playerId) {
+
+ for (let i = 1; i <= 5; i++) {
         const player = document.getElementById(playerId);
         const playerName = player.innerText;
-        const list= document.getElementById(i);
-        list.innerText = playerName; 
-        }
-        
+        const list = document.getElementById(i);
+        list.innerText = playerName;
+        playerList(playerId);
     }
+    
 
+}
 
 
 document.getElementById('njr').addEventListener('click', function () {
